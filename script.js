@@ -27,12 +27,12 @@ const conclusions = [
     "Here's to a coding session filled with accomplishment!",
 ];
 
-function getRandomComponent(components) {
+const getRandomComponent = components => {
     const randomIndex = Math.floor(Math.random() * components.length);
     return components[randomIndex];
 }
 
-function getRandomMessage() {
+const getRandomMessage = () => {
     const introduction = getRandomComponent(introductions);
     const body = getRandomComponent(bodies);
     const conclusion = getRandomComponent(conclusions);
